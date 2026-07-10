@@ -14,6 +14,7 @@ cask "codelobby" do
   end
 
   depends_on arch: :arm64
+  depends_on :macos
 
   app "CodeLobby.app"
 
@@ -26,9 +27,9 @@ cask "codelobby" do
   end
 
   zap trash: [
+    "~/.codelobby",
     "~/Library/Application Support/codelobby",
     "~/Library/Preferences/com.codelobby.app.plist",
     "~/Library/Saved Application State/com.codelobby.app.savedState",
-    "~/.codelobby"
   ]
 end

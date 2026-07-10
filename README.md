@@ -5,10 +5,10 @@ Homebrew tap for [CodeLobby](https://github.com/SouhaibBenFarhat/code-lobby) —
 ## Install
 
 ```bash
-brew install --cask --no-quarantine souhaibbenfarhat/tap/codelobby
+brew install --cask souhaibbenfarhat/tap/codelobby
 ```
 
-> **Why `--no-quarantine`?** CodeLobby is not (yet) notarized by Apple. The flag tells Homebrew to skip macOS's quarantine flag so the app opens without the "CodeLobby is damaged and can't be opened" warning. It's Apple Silicon (arm64) only.
+Apple Silicon (arm64) only. The cask opens the app without any "damaged" warning — no extra flags or steps needed.
 
 ## Update
 
