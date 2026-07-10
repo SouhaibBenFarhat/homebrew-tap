@@ -17,6 +17,14 @@ cask "codelobby" do
 
   app "CodeLobby.app"
 
+  # CodeLobby isn't notarized yet, so a freshly downloaded app would be flagged
+  # "damaged". Strip the quarantine attribute on install so it opens cleanly.
+  # (Replaces the old `--no-quarantine` flag, which recent Homebrew removed.)
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/CodeLobby.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/codelobby",
     "~/Library/Preferences/com.codelobby.app.plist",
