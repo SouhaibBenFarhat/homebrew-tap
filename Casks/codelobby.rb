@@ -1,6 +1,6 @@
 cask "codelobby" do
-  version "0.2.1"
-  sha256 "ae93c8259a77bbb9ff5a015831ab39cabffcfe3e23668d8f5b6b19f45fe44bd9"
+  version "0.2.6"
+  sha256 "ac984a713d74b7e8f94e0e44a3153afde5a1845fa1fd66422aa2167afeaa5ba0"
 
   url "https://github.com/SouhaibBenFarhat/code-lobby/releases/download/v#{version}/CodeLobby-arm64.dmg",
       verified: "github.com/SouhaibBenFarhat/code-lobby/"
