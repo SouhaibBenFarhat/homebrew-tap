@@ -1,24 +1,25 @@
 # homebrew-tap
 
-Homebrew tap for [CodeLobby](https://github.com/SouhaibBenFarhat/code-lobby) — a desktop app to monitor your GitHub PRs with real-time event streaming.
+Homebrew tap for my macOS apps.
 
-## Install
+| App | Install | What it is |
+| --- | --- | --- |
+| [GitSwitch](https://github.com/SouhaibBenFarhat/gitswitch) | `brew install --cask souhaibbenfarhat/tap/gitswitch` | Menu bar app to switch between GitHub CLI accounts — [product page](https://souhaibbenfarhat.github.io/gitswitch) |
+| [CodeLobby](https://github.com/SouhaibBenFarhat/code-lobby) | `brew install --cask souhaibbenfarhat/tap/codelobby` | Monitor your GitHub PRs with real-time event streaming |
 
-```bash
-brew install --cask souhaibbenfarhat/tap/codelobby
-```
-
-Apple Silicon (arm64) only. The cask opens the app without any "damaged" warning — no extra flags or steps needed.
+Apple Silicon (arm64) only. Casks strip the quarantine flag on install, so apps
+open cleanly without a "damaged" warning — no extra flags or steps needed.
 
 ## Update
 
 ```bash
+brew upgrade --cask gitswitch
 brew upgrade --cask codelobby
 ```
 
 ## Uninstall
 
 ```bash
-brew uninstall --cask codelobby        # remove the app
-brew uninstall --zap --cask codelobby  # also remove its data (~/Library, ~/.codelobby)
+brew uninstall --cask <name>        # remove the app
+brew uninstall --zap --cask <name>  # also remove its data
 ```
