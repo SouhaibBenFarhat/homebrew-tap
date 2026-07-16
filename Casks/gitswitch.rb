@@ -1,6 +1,6 @@
 cask "gitswitch" do
-  version "0.1.0"
-  sha256 "266f8d081d64e09eef5e55675cbef0cfe39266f538a716f88e3fd3353121dc35"
+  version "0.1.1"
+  sha256 "0e0c3d4e97c718c3f42857ebed8925deb57245ff291250ef0acdaeb92ac03880"
 
   url "https://github.com/SouhaibBenFarhat/gitswitch/releases/download/v#{version}/GitSwitch-arm64.zip",
       verified: "github.com/SouhaibBenFarhat/gitswitch/"
