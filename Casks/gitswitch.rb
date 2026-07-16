@@ -14,7 +14,7 @@ cask "gitswitch" do
   end
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
   depends_on formula: "gh"
 
   app "GitSwitch.app"
