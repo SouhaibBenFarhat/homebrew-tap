@@ -1,6 +1,6 @@
 cask "easyapply" do
-  version "0.2.0"
-  sha256 "57af73b3e6c70f21774a8bd6048a53526477337b0beec481d6dad62956bc49d8"
+  version "0.3.0"
+  sha256 "188acc1ad8b8dfe358186b7b6e4695c857e49fe24d6777f0fe87e656474a99ad"
 
   url "https://github.com/SouhaibBenFarhat/easy-apply/releases/download/v#{version}/EasyApply-arm64.dmg",
       verified: "github.com/SouhaibBenFarhat/easy-apply/"
